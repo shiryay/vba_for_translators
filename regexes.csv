@@ -1,0 +1,38 @@
+Mrs.,\WMr\s|\WMs\s|\WMrs\.*\s,Use 'Ms.' and 'Mr.' only
+domicile,domicile\w*,Do not use 'domicile'
+declare,declar\w+,Use 'deponent' for 'declarant'; 'state' or 'report' instead of 'declare'
+Maitre,Maitre,Use 'Mr.'
+inform,inform(s|ed|ing*),Use 'report' or 'state' instead of 'inform'
+labor relations,lab(or|our) relations,Use 'employment relations'
+a permission,a permission,Use 'permission' without article
+till,\Wtill\W,Use 'until'
+Civil Status,Civil Status,Use 'Civil Registry'
+the present,\Wpresent\W,Use 'this' - NOT 'present'
+said,\Wsaid\W,Use 'above', etc.
+in the day-time,in the (day-time|day time),Use 'during the day'
+physical training,physical training,Use 'physical education'
+natural,natural,Use 'natural-born' regarding son or daughter
+per cent,per cent,Use 'percent'
+particulars,particulars,Use 'details'
+surname,surname,Use 'last name'
+therapy,therapy,Use 'internal medicine'
+protocol,protocol,Use 'report' or 'certificate'
+aspect,aspect\W,Use 'aspects'
+high school,high(\s|-school),Use 'secondary school'
+retain,retain\w*,Use detain
+finish school,finish\w*(\s+|\s+\w+\s*school),Use 'graduate from'
+competences,competence\w*,Use 'competency'
+technologies,technologies,Use 'technology'
+almost good,almost good,Use 'fair'
+approved,approved,Use 'passed' if it regards exams
+bachelor,bachelor,Check if secondary school baccalaureate is not what is meant
+admit,admit\w* to(\s+|\s+\w+\s*exam),Use 'passed the exam'
+educational,educational,Use 'education' instead of the adjective
+valeology,valeolog\w*,Use 'health'
+oriental,oriental,Use 'Asian' if it concerns a language
+studied language,studied language\w*,Use 'language of study'
+further mathematics,further math\w*,Use 'advanced mathematics'
+office of record,office of (record|records)\w*,Use 'office of the registrar'
+polytechnic industrial,polytechnic industrial,Use 'industrial polytechnic'
+technician,technician\w*,Use 'technical diploma' if it's a degree
+school,school\w*,Use 'faculty' if it concerns higher education
