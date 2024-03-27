@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Modified and appended by shiryay
 
 Search(engine) {
-	urls := {"Google" : "https://www.google.ru/search?q=`%22{query}`%22", "GoogleBooks" : "https://www.google.com/search?tbm=bks&q=`%22{query}`%22", "GoogleTr" : "https://translate.google.ru/?sl=auto&tl=en&text={query}&op=translate&hl=en", "LingueeDeEn" : "https://www.linguee.de/deutsch-englisch/search?source=auto&query=`%22{query}`%22", "LingueeRuEn" : "https://www.linguee.ru/russian-english/search?source=auto&query={query}", "LingueeEsEn" : "https://www.linguee.com/english-spanish/search?source=spanish&query={query}", "LingueeFrEn" : "https://www.linguee.fr/francais-anglais/search?source=auto&query={query}", "Proz" : "https://www.google.ru/search?q=`%22{query}`%22+english+proz", "Insur" : "https://www.insur-info.ru/dictionary/search/?q={query}&btnFind=`%C8`%F1`%EA`%E0`%F2`%FC`%21&q_far", "MultitranWeb" : "https://www.multitran.com/c/m.exe?CL=1&s={query}&l1=1&l2=2", "MultitranLocal" : "d:\mt\network\multitran.exe", "Abkuerzungen" : "http://abkuerzungen.de/result.php?searchterm={query}&language=de", "Acronymfinder" : "https://www.acronymfinder.com/{query}.html", "Webster" : "https://www.merriam-webster.com/dictionary/{query}", "Wox" : "https://abkuerzungen.woxikon.de/abkuerzung/{query}.php", "Sokr" : "http://sokr.ru/{query}/", "Yandex" : "https://yandex.ru/search/?text=`%22{query}`%22"}
+	urls := {"Google" : "https://www.google.ru/search?q=`%22{query}`%22", "GoogleBooks" : "https://www.google.com/search?tbm=bks&q=`%22{query}`%22", "GoogleTr" : "https://translate.google.ru/?sl=auto&tl=en&text={query}&op=translate&hl=en", "LingueeDeEn" : "https://www.linguee.de/deutsch-englisch/search?source=auto&query=`%22{query}`%22", "LingueeRuEn" : "https://www.linguee.ru/russian-english/search?source=auto&query={query}", "LingueeEsEn" : "https://www.linguee.com/english-spanish/search?source=spanish&query={query}", "LingueeFrEn" : "https://www.linguee.fr/francais-anglais/search?source=auto&query={query}", "Proz" : "https://www.google.ru/search?q=`%22{query}`%22+english+proz", "Insur" : "https://www.insur-info.ru/dictionary/search/?q={query}&btnFind=`%C8`%F1`%EA`%E0`%F2`%FC`%21&q_far", "MultitranWeb" : "https://www.multitran.com/c/m.exe?CL=1&s={query}&l1=1&l2=2", "MultitranLocal" : "d:\mt\network\multitran.exe", "Abkuerzungen" : "http://abkuerzungen.de/result.php?searchterm={query}&language=de", "Acronymfinder" : "https://www.acronymfinder.com/{query}.html", "Webster" : "https://www.merriam-webster.com/dictionary/{query}", "Wox" : "https://abkuerzungen.woxikon.de/abkuerzung/{query}.php", "Sokr" : "http://sokr.ru/{query}/", "Yandex" : "https://yandex.ru/search/?text=`%22{query}`%22", "CollinsEs" : "https://www.collinsdictionary.com/dictionary/spanish-english/{query}"}
 	url := urls[engine]
 	send,^c
 	sleep 150
@@ -97,5 +97,10 @@ Search(engine) {
 
 !z::
 	provider := "MultitranLocal"
+	Search(provider)
+	return
+
+!c::
+	provider := "CollinsEs"
 	Search(provider)
 	return
