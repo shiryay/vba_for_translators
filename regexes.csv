@@ -36,3 +36,5 @@ office of record,office of (record|records)\w*,Use 'office of the registrar'
 polytechnic industrial,polytechnic industrial,Use 'industrial polytechnic'
 technician,technician\w*,Use 'technical diploma' if it's a degree
 school,school\w*,Use 'faculty' if it concerns higher education
+city,\b(?:city|district|borough|town|region|government)\b,Consider starting this word with a capital letter
+preschool,pre-*school,Use 'early childhood'
